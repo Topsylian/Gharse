@@ -719,8 +719,11 @@ body.dark .hero-information > p {
     position: fixed;
     background-color: transparent;
     left: 0;
-    top: 0;
+    top: 50px;
     z-index: 2;
+    height: 100vh;
+    padding: 0 5px;
+    
   }
 
   .hero-social-side-bar > a {
@@ -737,10 +740,6 @@ body.dark .hero-information > p {
 
   #logo > img {
     width: 100%;
-  }
-
-  .hero-social-side-bar {
-    padding: 0 5px;
   }
 
   .hero-information > h1 {
