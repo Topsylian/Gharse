@@ -719,7 +719,7 @@ body.dark .hero-information > p {
     position: fixed;
     background-color: transparent;
     left: 0;
-    top: 50px;
+    top: 0px;
     z-index: 2;
     height: 100vh;
     padding: 0 5px;
