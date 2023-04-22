@@ -332,20 +332,35 @@ body.dark .hero-information > p {
 }
 
 .hero-search {
+  background-color: var(--black);
+  color: var(--primary-text-light);
   width: 40%;
   outline: transparent;
   border: transparent;
-  padding: 5px 10px;
+  padding: 5px 15px;
   border-radius: 10px 0px 0px 10px;
   position: relative;
   font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body.dark .hero-search {
+  background-color: var(--primary-text-dark);
+  color: var(--primary-text-light);
 }
 
 .hero-search::placeholder {
   text-align: left;
   font-family: var(--hero-font);
   font-weight: 400;
-  font-size: .85rem;
+  color: var(--primary-text-dark);
+  font-size: 1rem;
+}
+
+body.dark .hero-search::placeholder {
+  color: var(--black);
 }
 
 .hero-search-btn {

@@ -818,21 +818,21 @@ body.dark .second-box-details-bodytext p {
     width: 100%;
     height: 400px;
     position: relative;
-    border-radius: 0px;
+    border-radius: 10px;
   }
 
   .service-video > video {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 0px;
+    border-radius: 10px;
   }
 
   .service-video > .playbutton {
     background-color: rgba(41, 37, 37, 0.5);
     padding: 0%;
     height: 100%;
-    border-radius: 0px;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     gap: 10px;
