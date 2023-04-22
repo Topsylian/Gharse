@@ -1,0 +1,837 @@
+:root {
+  --dark: rgb(33, 33, 33);
+  --background: rgba(29, 54, 101, 1);
+  --black: rgba(59, 59, 59, 1);
+  --primary-text-dark: rgba(112, 112, 112, 1);
+  --primary-text-light: rgb(255, 255, 255, 1);
+  --input-orange-color: rgba(246, 146, 37, 1);
+  --gallery-background: rgba(241, 243, 246, 1);
+  --x-offset: -4px;
+  --y-offset: 4px;
+  --stroke: 0.4px;
+  --main-font: "Inter", sans-serif;
+  --title-font: "Aclonica", sans-serif;
+  --paragraph: "Poppins", sans-serif;
+  --hero-font: "Open Sans", sans-serif;
+}
+
+#footer {
+  width: 100%;
+  padding: 2% 16%;
+  background-color: var(--black);
+  color: var(--primary-text-light);
+}
+
+body.dark #footer {
+  background-color: var(--primary-text-light);
+  color: var(--black);
+}
+
+.footer-wrapper {
+  width: 100%;
+  display: flex;
+  margin-bottom: 35px;
+}
+
+/*left footer details*/
+
+.left-footer-details {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+/*footer nav and footer logo are direct children of left-footer details*/
+
+.footer-nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+}
+
+.help {
+  width: 33.3%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.footer-help-title > h3 {
+  font-family: var(--hero-font);
+  font-weight: 600;
+  font-size: 1.3125rem;
+}
+
+.footer-help {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.footer-help > section {
+  display: flex;
+  gap: 15px;
+  flex-direction: row;
+  align-items: center;
+}
+
+.footer-help > section > a {
+  font-family: var(--hero-font);
+  font-weight: 400;
+  font-size: 1.25rem;
+  color: var(--primary-text-light);
+}
+
+body.dark .footer-help > section > a {
+  color: var(--black);
+}
+
+/*company design for footer*/
+
+.company {
+  width: 33.3%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.footer-company-title > h3 {
+  font-family: var(--hero-font);
+  font-weight: 600;
+  font-size: 1.3125rem;
+}
+
+.footer-company {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.footer-company > section {
+  display: flex;
+  align-items: center;
+}
+
+.footer-company > section > a {
+  font-family: var(--hero-font);
+  font-weight: 400;
+  font-size: 1.25rem;
+  color: var(--primary-text-light);
+}
+
+body.dark .footer-company > section > a {
+  color: var(--black);
+}
+
+/*shop footer design*/
+.shop {
+  width: 33.3%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.footer-shop-title > h3 {
+  font-family: var(--hero-font);
+  font-weight: 600;
+  font-size: 1.3125rem;
+}
+
+.footer-shop {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.footer-shop > section {
+  display: flex;
+  align-items: center;
+}
+
+.footer-shop > section > a {
+  font-family: var(--hero-font);
+  font-weight: 400;
+  font-size: 1.25rem;
+  color: var(--primary-text-light);
+}
+
+body.dark .footer-shop > section > a {
+  color: var(--black);
+}
+
+/* footer logo design down here*/
+
+.footer-logo {
+  width: fit-content;
+  display: flex;
+  justify-content: start;
+  padding: 10px;
+  background-color: var(--primary-text-dark);
+  border-radius: 10px;
+}
+
+body.dark .footer-logo {
+  background-color: var(--black);
+  border-radius: 10px;
+}
+
+.footer-img {
+  width: 200px;
+  height: 65px;
+}
+
+.footer-img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*right footer design*/
+
+.right-footer-details {
+  width: 50%;
+  display: flex;
+}
+
+.right-footer-wrapper {
+  width: 100%;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.right-footer-title {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.right-footer-title > h3 {
+  font-size: 1.3125rem;
+  font-family: var(--hero-font);
+  font-weight: 600;
+}
+
+.footer-form {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+label.footer-mail {
+  position: relative;
+  width: 50%;
+  height: 50px;
+  padding: 0px;
+  display: flex;
+}
+
+.footer-mail > input {
+  width: 100%;
+  height: 100%;
+  font-size: 1.25rem;
+  border-radius: 50px;
+  padding-left: 15px;
+  outline: transparent;
+  background-color: var(--primary-text-light);
+  color: var(--black);
+}
+
+body.dark .footer-mail > input {
+  background-color: var(--black);
+  color: var(--primary-text-light);
+}
+
+.footer-mail > input::placeholder {
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: var(--hero-font);
+  color: var(--dark);
+  opacity: 0.3;
+  padding-left: 45px;
+}
+
+body.dark .footer-mail > input::placeholder {
+  color: var(--primary-text-light);
+}
+
+.footer-mail > i {
+  position: absolute;
+  top: 17px;
+  left: 15px;
+  font-size: 1.1rem;
+  color: var(--input-orange-color);
+}
+
+.footer-mail > a {
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 49px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 100%;
+  background-color: var(--input-orange-color);
+}
+
+.footer-mail > a > i {
+  font-size: 1.5rem;
+  color: var(--primary-text-light);
+}
+
+.footer-social-media {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.footer-social-media > a {
+  width: 52px;
+  height: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-text-light);
+  border-radius: 100%;
+  color: var(--black);
+  font-size: 1.5rem;
+}
+
+body.dark .footer-social-media > a {
+  background-color: var(--black);
+  color: var(--primary-text-light);
+}
+
+/*line under footer details*/
+
+.underline-footer {
+  width: 100%;
+  height: 2px;
+  background-color: var(--primary-text-light);
+  margin-bottom: 35px;
+}
+
+body.dark .underline-footer {
+  background-color: var(--black);
+}
+
+.copyright {
+  width: 100%;
+  text-align: center;
+  font-size: 0.875rem;
+  font-family: var(--hero-font);
+  color: var(--primary-text-light);
+}
+
+body.dark .copyright {
+  color: var(--black);
+}
+
+@media screen and (max-width: 1440px) {
+  #footer {
+    width: 100%;
+    padding: 2% 8%;
+    background-color: var(--black);
+    color: var(--primary-text-light);
+  }
+
+  body.dark #footer {
+    background-color: var(--primary-text-light);
+    color: var(--black);
+  }
+
+  .footer-wrapper {
+    width: 100%;
+    display: flex;
+    margin-bottom: 35px;
+  }
+
+  /*left footer details*/
+
+  .left-footer-details {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  /*footer nav and footer logo are direct children of left-footer details*/
+
+  .footer-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+  }
+
+  .help {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .footer-help-title > h3 {
+    font-family: var(--hero-font);
+    font-weight: 600;
+    font-size: 1.3125rem;
+  }
+
+  .footer-help {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer-help > section {
+    display: flex;
+    gap: 15px;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .footer-help > section > a {
+    font-family: var(--hero-font);
+    font-weight: 400;
+    font-size: 1.25rem;
+    color: var(--primary-text-light);
+  }
+
+  body.dark .footer-help > section > a {
+    color: var(--black);
+  }
+
+  /*company design for footer*/
+
+  .company {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .footer-company-title > h3 {
+    font-family: var(--hero-font);
+    font-weight: 600;
+    font-size: 1.3125rem;
+  }
+
+  .footer-company {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer-company > section {
+    display: flex;
+    align-items: center;
+  }
+
+  .footer-company > section > a {
+    font-family: var(--hero-font);
+    font-weight: 400;
+    font-size: 1.25rem;
+    color: var(--primary-text-light);
+  }
+
+  body.dark .footer-company > section > a {
+    color: var(--black);
+  }
+
+  /*shop footer design*/
+  .shop {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .footer-shop-title > h3 {
+    font-family: var(--hero-font);
+    font-weight: 600;
+    font-size: 1.3125rem;
+  }
+
+  .footer-shop {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer-shop > section {
+    display: flex;
+    align-items: center;
+  }
+
+  .footer-shop > section > a {
+    font-family: var(--hero-font);
+    font-weight: 400;
+    font-size: 1.25rem;
+    color: var(--primary-text-light);
+  }
+
+  body.dark .footer-shop > section > a {
+    color: var(--black);
+  }
+
+  /* footer logo design down here*/
+
+  .footer-logo {
+    width: fit-content;
+    display: flex;
+    justify-content: start;
+    padding: 10px;
+    background-color: var(--primary-text-dark);
+    border-radius: 10px;
+  }
+
+  body.dark .footer-logo {
+    background-color: var(--black);
+    border-radius: 10px;
+  }
+
+  .footer-img {
+    width: 200px;
+    height: 65px;
+  }
+
+  .footer-img > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /*right footer design*/
+
+  .right-footer-details {
+    width: 40%;
+    display: flex;
+  }
+
+  .right-footer-wrapper {
+    width: 100%;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .right-footer-title {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .right-footer-title > h3 {
+    font-size: 1.3125rem;
+    font-family: var(--hero-font);
+    font-weight: 600;
+  }
+
+  .footer-form {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  label.footer-mail {
+    position: relative;
+    width: 50%;
+    height: 50px;
+    padding: 0px;
+    display: flex;
+  }
+
+  .footer-mail > input {
+    width: 100%;
+    height: 100%;
+    font-size: 1.25rem;
+    border-radius: 50px;
+    padding-left: 15px;
+    outline: transparent;
+    background-color: var(--primary-text-light);
+    color: var(--black);
+  }
+
+  body.dark .footer-mail > input {
+    background-color: var(--black);
+    color: var(--primary-text-light);
+  }
+
+  .footer-mail > input::placeholder {
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: var(--hero-font);
+    color: var(--dark);
+    opacity: 0.3;
+    padding-left: 45px;
+  }
+
+  body.dark .footer-mail > input::placeholder {
+    color: var(--primary-text-light);
+  }
+
+  .footer-mail > i {
+    position: absolute;
+    top: 17px;
+    left: 15px;
+    font-size: 1.1rem;
+    color: var(--input-orange-color);
+  }
+
+  .footer-mail > a {
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 49px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 100%;
+    background-color: var(--input-orange-color);
+  }
+
+  .footer-mail > a > i {
+    font-size: 1.5rem;
+    color: var(--primary-text-light);
+  }
+
+  .footer-social-media {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+  }
+
+  .footer-social-media > a {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-text-light);
+    border-radius: 100%;
+    color: var(--black);
+    font-size: 1.5rem;
+  }
+
+  body.dark .footer-social-media > a {
+    background-color: var(--black);
+    color: var(--primary-text-light);
+  }
+
+  /*line under footer details*/
+
+  .underline-footer {
+    width: 100%;
+    height: 2px;
+    background-color: var(--primary-text-light);
+    margin-bottom: 35px;
+  }
+
+  body.dark .underline-footer {
+    background-color: var(--black);
+  }
+
+  .copyright {
+    width: 100%;
+    text-align: center;
+    font-size: 0.875rem;
+    font-family: var(--hero-font);
+    color: var(--primary-text-light);
+  }
+
+  body.dark .copyright {
+    color: var(--black);
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  #footer {
+    padding: 2% 2%;
+  }
+
+	.left-footer-details {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  /*footer nav and footer logo are direct children of left-footer details*/
+
+  .footer-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+  }
+
+  .help {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .footer-help-title > h3 {
+    font-family: var(--hero-font);
+    font-weight: 600;
+    font-size: 1.3125rem;
+  }
+
+  .footer-help {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer-help > section {
+    display: flex;
+    gap: 15px;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .footer-help > section > a {
+    font-family: var(--hero-font);
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: var(--primary-text-light);
+  }
+
+  body.dark .footer-help > section > a {
+    color: var(--black);
+  }
+
+  /*company design for footer*/
+
+  .company {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .footer-company-title > h3 {
+    font-family: var(--hero-font);
+    font-weight: 600;
+    font-size: 1.3125rem;
+  }
+
+  .footer-company {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer-company > section {
+    display: flex;
+    align-items: center;
+  }
+
+  .footer-company > section > a {
+    font-family: var(--hero-font);
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: var(--primary-text-light);
+  }
+
+  body.dark .footer-company > section > a {
+    color: var(--black);
+  }
+
+  /*shop footer design*/
+  .shop {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .footer-shop-title > h3 {
+    font-family: var(--hero-font);
+    font-weight: 600;
+    font-size: 1.3125rem;
+  }
+
+  .footer-shop {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer-shop > section {
+    display: flex;
+    align-items: center;
+  }
+
+  .footer-shop > section > a {
+    font-family: var(--hero-font);
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: var(--primary-text-light);
+  }
+
+  /*right footer design*/
+
+  .right-footer-details {
+    width: 45%;
+    display: flex;
+  }
+
+  .right-footer-wrapper {
+    width: 100%;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .right-footer-title {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .right-footer-title > h3 {
+    font-size: 1.3125rem;
+    font-family: var(--hero-font);
+    font-weight: 600;
+  }
+
+  .footer-form {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  label.footer-mail {
+    position: relative;
+    width: 80%;
+    height: 50px;
+    padding: 0px;
+    display: flex;
+  }
+
+  .footer-mail > input {
+    width: 100%;
+    height: 100%;
+    font-size: 1.25rem;
+    border-radius: 50px;
+    padding-left: 15px;
+    outline: transparent;
+    background-color: var(--primary-text-light);
+    color: var(--black);
+  }
+}

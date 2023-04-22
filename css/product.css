@@ -1,0 +1,432 @@
+:root {
+  --dark: rgb(33, 33, 33);
+  --background: rgba(29, 54, 101, 1);
+  --black: rgba(59, 59, 59, 1);
+  --primary-text-dark: rgba(112, 112, 112, 1);
+  --primary-text-light: rgb(255, 255, 255, 1);
+  --input-orange-color: rgba(246, 146, 37, 1);
+  --gallery-background: rgba(241, 243, 246, 1);
+  --x-offset: -4px;
+  --y-offset: 4px;
+  --stroke: 0.4px;
+  --main-font: "Inter", sans-serif;
+  --title-font: "Aclonica", sans-serif;
+  --paragraph: "Poppins", sans-serif;
+  --hero-font: "Open Sans", sans-serif;
+}
+
+#product {
+  width: 100%;
+  padding: 0% 16%;
+  margin-bottom: 150px;
+}
+
+.product-wrapper {
+  width: 100%;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+	margin-bottom: 20px;
+}
+
+.product-wrapper > h2 {
+  width: 80%;
+  color: var(--black);
+  font-size: 2.75rem;
+  font-weight: bold;
+  letter-spacing: 2.2px;
+  text-shadow: -4px 4px 0px var(--primary-text-light),
+    -4.5px 5px 0px var(--input-orange-color),
+    -4.5px 3.5px 0px var(--input-orange-color),
+    -4px 5px 0px var(--input-orange-color),
+    -3.5px 5px 0px var(--input-orange-color);
+}
+
+body.dark .product-wrapper > h2 {
+	color: var(--primary-text-light);
+	text-shadow: -4px 4px 0px var(--black),
+	-4.5px 5px 0px var(--input-orange-color),
+	-4.5px 3.5px 0px var(--input-orange-color),
+	-4px 5px 0px var(--input-orange-color),
+	-3.5px 5px 0px var(--input-orange-color);
+}
+
+.product-wrapper > p {
+  width: 25%;
+  font-size: 1rem;
+  letter-spacing: 0.8px;
+  color: var(--black);
+  opacity: 0.83;
+  margin-bottom: 15px;
+}
+
+.product-carousel {
+  width: 100%;
+  padding: 20px 40px 20px 40px;
+  background: var(--input-orange-color);
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-card-info {
+  width: 45%;
+  padding-left: 35px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.product-card-info > h3 {
+  width: 60%;
+  font-size: 2.125rem;
+  letter-spacing: 1.7px;
+  color: var(--black);
+  text-transform: uppercase;
+  opacity: 1;
+  margin-bottom: 15px;
+}
+
+.product-card-info > p {
+  font-size: 1.4375rem;
+  font-weight: 400;
+  color: var(--black);
+  margin-bottom: 30px;
+}
+
+.product-card-info > a {
+	width: fit-content;
+  padding: 20px 30px;
+  font-size: 1rem;
+  text-transform: capitalize;
+  opacity: 1;
+  color: var(--primary-text-light);
+  border: 1px solid var(--primary-text-light);
+  border-radius: 10px;
+}
+
+/*product button design*/
+
+.product-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.product-buttons > a {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border-radius: 100%;
+  color: var(--primary-text-light);
+  font-size: 1.25rem;
+	font-weight: bold;
+  transition: 0.5s ease-in-out;
+}
+
+/*product card image design*/
+.product-card-image {
+  width: 45%;
+  display: flex;
+  position: relative;
+	align-items: center;
+  justify-content: flex-end;
+}
+
+.product-card-image > section {
+  width: 250px;
+	padding-right: 40px;
+}
+
+.product-card-image > section > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/*product card image paragraph*/
+.product-card-image > p {
+  position: absolute;
+  right: 0px;
+  top: 15px;
+  letter-spacing: 0.95px;
+  color: rgba(29, 54, 101, 1);
+  text-transform: capitalize;
+  opacity: 1;
+	font-size: 1.1875rem;
+	width: 25%;
+}
+
+/*active product*/
+.active-product {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}
+
+.active-product > a {
+	width: 20px;
+	height: 20px;
+	border: 1px solid var(--input-orange-color);
+	transition: .5s ease-in-out;
+	border-radius: 100%;
+}
+
+.active-product > a:hover {
+	width: 45px;
+	background-color: var(--input-orange-color);
+}
+
+/*product list card*/
+.product-wrapper-two {
+	display: flex;
+	flex-direction: column;
+	gap: 60px;
+}
+
+.view-all-products {
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.view-all-products > a {
+	color: var(--black);
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+
+body.dark .view-all-products > a {
+  color: var(--primary-text-light);
+}
+
+.product-list-wrapper {
+	width: 100%;
+	display: flex;
+	gap: 25px;
+	padding-bottom: 100px;
+}
+
+.product-list-card {
+	width: 25%;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	border-radius: 10px;
+	background: var(--gallery-background);
+	box-shadow: 0px 0px 1px 0px var(--primary-text-dark);
+}
+
+.list-card-image {
+	width: 100%;
+	height: fit-content;
+	background-color: rgba(255, 255, 255, 0.791);
+	border-radius: 10px 10px 0px 0px;
+  overflow: hidden;
+}
+
+.list-card-image > img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.list-card-info {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	padding: 0px 15px;
+}
+
+.list-card-info > h2 {
+	width: 65%;
+	color: var(--black);
+	font-size: 1.3125rem;
+	font-weight: 700;
+	letter-spacing: 1.05px;
+}
+
+.list-card-info > .list-card-price {
+	display: flex;
+	gap: 40px;
+	margin-bottom: 20px;
+}
+
+.list-card-info > .list-card-price > h4 {
+	color: var(--input-orange-color);
+	font-size: 1.3125rem;
+	font-weight: 700;
+	letter-spacing: 1.05px;
+	width: 50%;
+}
+
+.list-card-info > .list-card-price > h4.gray {
+	color: var(--primary-text-dark);
+}
+
+h4.gray > span {
+	text-decoration: line-through;
+}
+
+.list-card-info > .list-link {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.list-card-info > .list-link > a {
+	width: 140px;
+	height: 50px;
+	font-size: 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--input-orange-color);
+	color: var(--dark);
+	border-radius: 10px;
+	transition: .5s ease-in-out;
+	margin-bottom: 35px;
+}
+
+.list-card-info > .list-link > a:hover {
+	background-color: var(--dark);
+	color: var(--primary-text-light);
+}
+
+@media screen and (max-width: 1440px) {
+  #product {
+    padding: 0 8%;
+  }
+
+  .product-list-wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    padding-bottom: 100px;
+    border-radius: 10px;
+  }
+
+  .product-list-card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border-radius: 10px;
+    background: var(--gallery-background);
+    box-shadow: 0px 0px 1px 0px var(--primary-text-dark);
+  }
+
+  .center-card {
+    grid-column: 2 / 3;
+  }
+
+  .list-card-image {
+    width: 100%;
+    height: fit-content;
+    background-color: var(--gallery-background);
+    border-radius: 10px 10px 0px 0px;
+    overflow: hidden;
+  }
+  
+  .list-card-image > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  .list-card-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0px 15px;
+  }
+  
+  .list-card-info > h2 {
+    width: 80%;
+    color: var(--black);
+    font-size: 1.3125rem;
+    font-weight: 700;
+    letter-spacing: 1.05px;
+  }
+  
+  .list-card-info > .list-card-price {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 20px;
+  }
+  
+  .list-card-info > .list-card-price > h4 {
+    color: var(--input-orange-color);
+    font-size: 1.3125rem;
+    font-weight: 700;
+    letter-spacing: 1.05px;
+    width: 50%;
+  }
+  
+  .list-card-info > .list-card-price > h4.gray {
+    color: var(--primary-text-dark);
+  }
+  
+  h4.gray > span {
+    text-decoration: line-through;
+  }
+  
+  .list-card-info > .list-link {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .list-card-info > .list-link > a {
+    width: 140px;
+    height: 50px;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--input-orange-color);
+    color: var(--dark);
+    border-radius: 10px;
+    transition: .5s ease-in-out;
+    margin-bottom: 35px;
+  }
+  
+  .list-card-info > .list-link > a:hover {
+    background-color: var(--dark);
+    color: var(--primary-text-light);
+  }
+}
+
+@media screen and (max-width: 1110px) {
+  #product {
+    padding: 0 2%;
+  }
+
+  .product-card-image > p {
+    position: absolute;
+    right: 20px;
+    top: 40px;
+    letter-spacing: 0.95px;
+    color: rgba(29, 54, 101, 1);
+    text-transform: capitalize;
+    opacity: 1;
+    font-size: 1.1rem;
+  }
+}
