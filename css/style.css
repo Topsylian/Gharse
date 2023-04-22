@@ -722,6 +722,7 @@ body.dark .hero-information > p {
     top: 0px;
     z-index: 2;
     height: 100vh;
+    border: 2px solid red;
     padding: 0 5px;
     
   }
