@@ -281,7 +281,7 @@ body.dark #barber >.barber-wrapper > .barber-title  > section {
 	.barber-app-wrapper {
 		padding: 0 2%;
 		flex-direction: column;
-		height: fit-content;
+		height: 1000px;
 	}
 
 	.barber-app-information {
@@ -355,7 +355,6 @@ body.dark #barber >.barber-wrapper > .barber-title  > section {
 	.barber-app-wrapper {
 		padding: 0 2%;
 		flex-direction: column;
-		height: fit-content;
 	}
 
 	.barber-app-information {
@@ -500,7 +499,6 @@ body.dark #barber >.barber-wrapper > .barber-title  > section {
 	.barber-app-wrapper {
 		padding: 0 2%;
 		flex-direction: column;
-		height: fit-content;
 	}
 
 	.barber-app {
