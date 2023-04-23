@@ -337,7 +337,7 @@ body.dark .hero-information > p {
   width: 40%;
   outline: transparent;
   border: transparent;
-  padding: 5px 15px;
+  padding: 8px 15px;
   border-radius: 10px 0px 0px 10px;
   position: relative;
   font-size: 1rem;
@@ -365,7 +365,6 @@ body.dark .hero-search::placeholder {
 
 .hero-search-btn {
   width: 20%;
-  height: 45px;
   background-color: var(--input-orange-color);
   color: var(--dark);
   border-radius: 0px 10px 10px 0px;
@@ -750,7 +749,7 @@ body.dark .hero-search::placeholder {
     top: 0px;
     z-index: 2;
     height: 550px;
-    padding: 0 5px;
+    padding: 0 1px;
     
   }
 
@@ -792,13 +791,12 @@ body.dark .hero-search::placeholder {
 
   .hero-search-btn {
     width: 20%;
-    height: 30px;
   }
 }
 
 @media screen and (max-width: 385px) {
   .hero-social-side-bar {
-    padding: 2px;
+    padding: 0px 1px;
   }
 
   .hero-information > h1 {
@@ -808,9 +806,5 @@ body.dark .hero-search::placeholder {
   .hero-information p {
     width: 80%;
     font-size: .85rem;
-  }
-
-  .hero-search-btn {
-    height: 30px;
   }
 }

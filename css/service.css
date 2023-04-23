@@ -677,7 +677,7 @@ body.dark .second-box-details-bodytext p {
   }
 }
 
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 450px) {
   .service-info-first-box-title > h2 {
     font-size: 2rem;
   }
@@ -779,7 +779,7 @@ body.dark .second-box-details-bodytext p {
   .second-box-details > h2 {
     font-weight: bold;
     font-size: 1.25rem;
-    width: 100%;
+    width: 90%;
     margin-bottom: 30px;
     text-align: center;
   }
@@ -792,12 +792,13 @@ body.dark .second-box-details-bodytext p {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    width: 100%;
+    width: 90%;
   }
 
   .service-paragraph {
     display: flex;
     align-items: center;
+		justify-content: center;
     gap: 15px;
   }
 
@@ -806,7 +807,7 @@ body.dark .second-box-details-bodytext p {
   }
 
   .second-box-details-bodytext p {
-    font-size: 1rem;
+    font-size: 0.85rem;
     font-weight: 400;
   }
 
