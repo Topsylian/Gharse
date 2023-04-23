@@ -375,8 +375,8 @@ body.dark .hero-search::placeholder {
 
 @media screen and (max-width: 1440px) {
   .hero-background {
-    width: 100%;
     height: 80vh;
+    width: 100%;
     background-color: var(--primary-text-light);
     display: flex;
     margin-bottom: 100px;
@@ -402,6 +402,7 @@ body.dark .hero-search::placeholder {
   }
 
   .hero-img {
+    height: 80vh;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -410,8 +411,8 @@ body.dark .hero-search::placeholder {
 
   /*first small image-wrapper*/
   .hero-small-image-wrapper {
-    width: 15%;
     height: 80vh;
+    width: 15%;
   }
 
   .hero-small-image-wrapper > img {
@@ -421,8 +422,8 @@ body.dark .hero-search::placeholder {
   }
 
   .hero-big-image-wrapper {
-    width: 70%;
     height: 80vh;
+    width: 70%;
     display: flex;
     align-items: flex-end;
   }
@@ -503,7 +504,6 @@ body.dark .hero-search::placeholder {
 @media screen and (max-width: 1100px) {
   .hero-background {
     width: 100%;
-    height: 80vh;
     background-color: var(--primary-text-light);
     display: flex;
     margin-bottom: 100px;
@@ -515,7 +515,6 @@ body.dark .hero-search::placeholder {
   /*social media at sidebar*/
   .hero-social-side-bar {
     width: fit-content;
-    height: 80vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -538,7 +537,6 @@ body.dark .hero-search::placeholder {
   /*first small image-wrapper*/
   .hero-small-image-wrapper {
     width: 15%;
-    height: 80vh;
   }
 
   .hero-small-image-wrapper > img {
@@ -549,7 +547,6 @@ body.dark .hero-search::placeholder {
 
   .hero-big-image-wrapper {
     width: 70%;
-    height: 80vh;
     display: flex;
     align-items: flex-end;
   }
@@ -794,7 +791,7 @@ body.dark .hero-search::placeholder {
   }
 }
 
-@media screen and (max-width: 385px) {
+@media screen and (max-width: 380px) {
   .hero-social-side-bar {
     padding: 0px 1px;
   }
