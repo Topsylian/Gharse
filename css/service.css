@@ -302,10 +302,11 @@ body.dark .second-box-details-bodytext p {
     width: 100%;
     display: flex;
     justify-content: center;
+    padding: 0 2%;
   }
 
   .service-info-first-box-title > h2 {
-    width: 80%;
+    width: 100%;
     text-align: center;
   }
 
@@ -864,5 +865,11 @@ body.dark .second-box-details-bodytext p {
 
   .playbutton > button:hover > i {
     color: var(--input-orange-color);
+  }
+}
+
+@media screen and (max-width: 380px) {
+	.service-info-first-box-title > h2 {
+    font-size: 1.5rem;
   }
 }
