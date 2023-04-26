@@ -868,7 +868,7 @@ body.dark .second-box-details-bodytext p {
   }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 390px) {
 	.service-info-first-box-title > h2 {
     font-size: 1.5rem;
   }

@@ -747,7 +747,7 @@ body.dark .hero-search::placeholder {
     z-index: 2;
     height: 550px;
     padding: 0 1px;
-    
+    display: none;
   }
 
   .hero-social-side-bar > a {
@@ -791,7 +791,7 @@ body.dark .hero-search::placeholder {
   }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 390px) {
   .hero-social-side-bar {
     padding: 0px 1px;
   }

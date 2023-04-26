@@ -218,7 +218,7 @@ body.dark .gallery-heading > h2 {
 	}
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 390px) {
 	.gallery-heading > h2 {
 		font-size: 1.5rem;
 	}

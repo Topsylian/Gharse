@@ -138,13 +138,15 @@ body.dark #barber >.barber-wrapper > .barber-title  > section {
 /*app download css goes under this comment*/
 .app-download-ads {
 	width: 100%;
+	height: 500px;
 	position: relative;
 	margin-bottom: 250px;
+	padding: 0px 0px;
 }
 
 .barber-app {
 	width: 100%;
-	height: 1000px;
+	height: 100%;
 }
 
 .barber-app > img {
@@ -160,17 +162,18 @@ body.dark #barber >.barber-wrapper > .barber-title  > section {
 	position: absolute;
 	top: 0;
 	left: 0;
-	padding: 2% 16%;
+	padding: 0px 16%;
 	display: flex;
-	gap: 75px;
+	gap: 0;
 }
 
 .barber-app-information {
 	width: 70%;
+	height: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	padding-top: 50px;
+	padding-top: 2% 0%;
 }
 
 .barber-app-information > h2 {
@@ -214,24 +217,6 @@ body.dark #barber >.barber-wrapper > .barber-title  > section {
 	object-fit: contain;
 }
 
-/*mock up*/
-.barber-app-mockup {
-	width: 30%;
-	position: relative;
-}
-
-.mockup {
-	width: 100%;
-	height: 855px;
-	padding: 0px;
-}
-
-.mockup > img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-}
-
 @media screen and (max-width: 1440px) {
 	.barber-show-wrapper {
 		padding: 0% 8%;
@@ -247,66 +232,45 @@ body.dark #barber >.barber-wrapper > .barber-title  > section {
 	}
 
 	.barber-app-information {
-		width: 50%;
+		width: 80%;
 	}
 
 	.barber-app-information > h3 {
-		width: 100%;
+		width: 800%;
 		font-size: 2.5rem;
 		font-weight: 400;
 		color: var(--primary-text-light);
 		margin-bottom: 35px;
-	}
-
-	.barber-app-mockup {
-		width: 50%;
-		display: flex;
-		justify-content: flex-end;
-	}
-
-	.mockup {
-		width: 80%;
-		height: 800px;
-		padding: 0px;
-	}
-	
-	.mockup > img {
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
 	}
 }
 
 @media screen and (max-width: 1100px) {
 	.barber-app-wrapper {
 		padding: 0 2%;
-		flex-direction: column;
-		height: 1000px;
 	}
 
 	.barber-app-information {
 		width: 100%;
-		justify-content: start;
+		justify-content: center;
 		align-items: center;
 		height: 100%;
-		padding-bottom: 0px;
 	}
 
 	.barber-app-information > h2 {
-		width: 50%;
-		font-size: 2.8rem;
+		width: 80%;
+		font-size: 2rem;
 	}
 
 	.barber-app-information > h3 {
-		width: 50%;
-		font-size: 2.3rem;
+		width: 80%;
+		font-size: 1.8rem;
 		font-weight: 400;
 		color: var(--primary-text-light);
 		margin-bottom: 35px;
 	}
 
 	.barber-app-information > p {
-		width: 50%;
+		width: 80%;
 		font-size: 1rem;
 		font-weight: 400;
 		color: var(--primary-text-light);
@@ -316,7 +280,7 @@ body.dark #barber >.barber-wrapper > .barber-title  > section {
 	}
 	
 	.barber-app-information > section.app-download-images {
-		width: 50%;
+		width: 80%;
 		display: flex;
 		gap: 20px;
 	}
@@ -354,32 +318,29 @@ body.dark #barber >.barber-wrapper > .barber-title  > section {
 @media screen and (max-width: 768px) {
 	.barber-app-wrapper {
 		padding: 0 2%;
-		flex-direction: column;
 	}
 
 	.barber-app-information {
 		width: 100%;
-		justify-content: start;
+		justify-content: center;
 		align-items: center;
 		height: 100%;
 		padding-bottom: 0px;
 	}
 
 	.barber-app-information > h2 {
-		width: 80%;
-		font-size: 2.8rem;
+		width: 100%;
 	}
 
 	.barber-app-information > h3 {
-		width: 80%;
-		font-size: 2.3rem;
+		width: 100%;
 		font-weight: 400;
 		color: var(--primary-text-light);
 		margin-bottom: 35px;
 	}
 
 	.barber-app-information > p {
-		width: 80%;
+		width: 100%;
 		font-size: 1rem;
 		font-weight: 400;
 		color: var(--primary-text-light);
@@ -389,7 +350,7 @@ body.dark #barber >.barber-wrapper > .barber-title  > section {
 	}
 	
 	.barber-app-information > section.app-download-images {
-		width: 80%;
+		width: 100%;
 		display: flex;
 		justify-content: start;
 		gap: 20px;
@@ -405,24 +366,6 @@ body.dark #barber >.barber-wrapper > .barber-title  > section {
 		height: 100%;
 		object-fit: contain;
 	}
-
-	.barber-app-mockup {
-		width: 100%;
-		display: flex;
-		justify-content: center;
-	}
-
-	.mockup {
-		width: 50%;
-		height: 500px;
-		padding: 0px;
-	}
-	
-	.mockup > img {
-		width: 100%;
-		height: 100%;
-		object-fit: contain;
-	}
 }
 
 @media screen and (max-width: 480px) {
@@ -431,7 +374,7 @@ body.dark #barber >.barber-wrapper > .barber-title  > section {
 		margin-bottom: 60px;
 		display: flex;
 		justify-content: center;
-		padding: 0 2%;
+		padding: 0 2%; 
 	}
 	
 	.barbing-heading > h2 {
@@ -498,20 +441,13 @@ body.dark #barber >.barber-wrapper > .barber-title  > section {
 
 	.barber-app-wrapper {
 		padding: 0 2%;
-		flex-direction: column;
-	}
-
-	.barber-app {
-		height: 1100px;
 	}
 
 	.barber-app-information {
 		width: 100%;
-		justify-content: start;
+		justify-content: center;
 		align-items: center;
 		height: 100%;
-		padding-bottom: 0px;
-		padding-top: 50px;
 	}
 
 	.barber-app-information > h2 {
@@ -555,27 +491,9 @@ body.dark #barber >.barber-wrapper > .barber-title  > section {
 		height: 100%;
 		object-fit: contain;
 	}
-
-	.barber-app-mockup {
-		width: 100%;
-		display: flex;
-		justify-content: center;
-	}
-
-	.mockup {
-		width: 100%;
-		height: 500px;
-		padding: 0px;
-	}
-	
-	.mockup > img {
-		width: 100%;
-		height: 100%;
-		object-fit: contain;
-	}
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 390px) {
 	.barbing-heading > h2{
 		font-size: 1.5rem;
 	}
