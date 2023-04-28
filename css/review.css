@@ -54,17 +54,16 @@ body.dark .review-wrapper > h2 {
 }
 
 .client-review-wrapper {
-  display: flex;
-  justify-content: space-between;
-  gap: 25px;
   width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
   height: fit-content;
+  gap: 25px;
   margin-bottom: 95px;
 }
 
 .clients-review {
-  width: 25%;
-  height: fit-content;
   padding: 0px;
 }
 
@@ -82,7 +81,7 @@ body.dark .review-wrapper > h2 {
 .first-client-wrapper {
   width: 100%;
   height: 100%;
-  padding: 30px 15px;
+  padding: 2% 15px;
   background: var(--primary-text-light);
   display: flex;
   flex-direction: column;
@@ -171,6 +170,10 @@ body.dark .review-wrapper > h2 {
   object-fit: contain;
 }
 
+.review-wrapper > .barber-buttons {
+  margin-bottom: 80px;
+}
+
 @media screen and (max-width: 1440px) {
   #review {
     width: 100%;
@@ -201,25 +204,85 @@ body.dark .review-wrapper > h2 {
   }
   
   .client-review-wrapper {
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto;
-    height: fit-content;
     margin-bottom: 95px;
   }
   
-  .clients-review {
-    width: 100%;
-    height: fit-content;
-    padding: 0px;
-  }
-
   .fourth-client {
-    grid-column: 2 / 3;
+    grid-area: 2 / 2 / 3 / 3;
   }
 }
 
 @media screen and (max-width: 1100px) {
+  #review {
+    padding: 2% 2%;
+  }
+
+  .client-review-wrapper {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    margin-bottom: 95px;
+  }
+
+  .clients-review-third {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+  
+  .fourth-client {
+    grid-area: 2 / 2 / 3 / 3;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #review {
+    padding: 2% 2%;
+  }
+
+  .review-wrapper > h2 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  #review {
+    padding: 2% 2%;
+  }
+
+  .review-wrapper > h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .review-info {
+    font-size: .85rem;
+  }
+
+  .client-review-wrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    margin-bottom: 95px;
+  }
+
+  .clients-review-first {
+    grid-area: 1 / 1 / 2 / 3;
+  }
+
+  .clients-review-second {
+    grid-area: 2 / 1 / 3 / 3;
+  }
+
+  .clients-review-third {
+    grid-area: 3 / 1 / 4 / 3;
+  }
+  
+  .fourth-client {
+    grid-area: 4 / 1 / 5 / 3;
+  }
+}
+
+@media screen and (max-width: 380px) {
   #review {
     padding: 2% 2%;
   }
