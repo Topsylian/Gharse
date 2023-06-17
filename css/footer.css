@@ -835,3 +835,197 @@ body.dark .copyright {
     color: var(--black);
   }
 }
+
+@media screen and (max-width: 760px) {
+  .footer-wrapper {
+    flex-direction: column;
+  }
+
+  .right-footer-details {
+    width: 100%;
+  }
+
+  .left-footer-details {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  /*footer nav and footer logo are direct children of left-footer details*/
+
+  .footer-nav {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 50px;
+  }
+
+  .help {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .footer-help-title > h3 {
+    font-family: var(--hero-font);
+    font-weight: 600;
+    font-size: 1.3125rem;
+  }
+
+  .footer-help {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer-help > section {
+    display: flex;
+    gap: 8px;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .footer-help > section > a {
+    font-family: var(--hero-font);
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: var(--primary-text-light);
+  }
+
+  body.dark .footer-help > section > a {
+    color: var(--black);
+  }
+
+  /*company design for footer*/
+
+  .company {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .footer-company-title > h3 {
+    font-family: var(--hero-font);
+    font-weight: 600;
+    font-size: 1.3125rem;
+  }
+
+  .footer-company {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer-company > section {
+    display: flex;
+    align-items: center;
+  }
+
+  .footer-company > section > a {
+    font-family: var(--hero-font);
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: var(--primary-text-light);
+  }
+
+  body.dark .footer-company > section > a {
+    color: var(--black);
+  }
+
+  /*shop footer design*/
+  .shop {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .footer-shop-title > h3 {
+    font-family: var(--hero-font);
+    font-weight: 600;
+    font-size: 1.3125rem;
+  }
+
+  .footer-shop {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer-shop > section {
+    display: flex;
+    align-items: center;
+  }
+
+  .footer-shop > section > a {
+    font-family: var(--hero-font);
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: var(--primary-text-light);
+  }
+
+  /*right footer design*/
+
+  .right-footer-details {
+    width: 100%;
+    display: flex;
+  }
+
+  .right-footer-wrapper {
+    width: 100%;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .right-footer-title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .right-footer-title > h3 {
+    font-size: 1.3125rem;
+    font-family: var(--hero-font);
+    font-weight: 600;
+  }
+
+  .footer-form {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  label.footer-mail {
+    position: relative;
+    width: 80%;
+    height: 50px;
+    padding: 0px;
+    display: flex;
+  }
+
+  .footer-mail > input {
+    width: 100%;
+    height: 100%;
+    font-size: 1.25rem;
+    border-radius: 50px;
+    padding-left: 15px;
+    outline: transparent;
+    background-color: var(--primary-text-light);
+    color: var(--black);
+  }
+
+  .footer-social-media {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+}
